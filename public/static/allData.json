@@ -10,12 +10,8 @@
                 "content": "Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id , nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.",
                 "images": [
                     "/static/20160323/01.png",
-                    "/static/20160323/02.jpg",
-                    "/static/20160323/03.jpg",
-                    "/static/20160323/04.jpg",
-                    "/static/20160323/05.jpg",
-                    "/static/20160323/06.png",
-                    "/static/20160323/07.png"
+                    "/static/20160323/02.png",
+                    "/static/20160323/03.png"
                 ]
             },
             {
@@ -24,10 +20,6 @@
                 "content": "Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id,nulla.Donec vitae sapien ut libero venenatis faucibus.ullam dictum felis eu pede mollis pretium.Pellentesque ut neque.",
                 "images": [
                     "/static/20160323/01.png",
-                    "/static/20160323/02.jpg",
-                    "/static/20160323/03.jpg",
-                    "/static/20160323/04.jpg",
-                    "/static/20160323/05.jpg",
                     "/static/20160323/06.png",
                     "/static/20160323/07.png"
                 ]
@@ -37,11 +29,7 @@
                 "title": "EventTitle",
                 "content": "Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id , nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.",
                 "images": [
-                    "/static/20160323/01.png",
-                    "/static/20160323/02.jpg",
-                    "/static/20160323/03.jpg",
-                    "/static/20160323/04.jpg",
-                    "/static/20160323/05.jpg",
+                    "/static/20160323/02.png",
                     "/static/20160323/06.png",
                     "/static/20160323/07.png"
                 ]
@@ -59,12 +47,8 @@
                 "content": "Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod  nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.",
                 "images": [
                     "/static/20160323/01.png",
-                    "/static/20160323/02.jpg",
-                    "/static/20160323/03.jpg",
-                    "/static/20160323/04.jpg",
-                    "/static/20160323/05.jpg",
-                    "/static/20160323/06.png",
-                    "/static/20160323/07.png"
+                    "/static/20160323/03.png",
+                    "/static/20160323/05.png"
                 ]
             },
             {
@@ -72,12 +56,8 @@
                 "title": "EventTitle",
                 "content": "Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.",
                 "images": [
-                    "/static/20160323/01.png",
-                    "/static/20160323/02.jpg",
-                    "/static/20160323/03.jpg",
-                    "/static/20160323/04.jpg",
-                    "/static/20160323/05.jpg",
-                    "/static/20160323/06.png",
+                    "/static/20160323/02.png",
+                    "/static/20160323/04.png",
                     "/static/20160323/07.png"
                 ]
             }

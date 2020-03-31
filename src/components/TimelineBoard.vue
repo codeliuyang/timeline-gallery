@@ -4,7 +4,6 @@
       <div class="row example-split">
         <div class="col-md-12 example-title">
           <h2>Split Timeline</h2>
-          <p>Small devices (tablets, 768px and up)</p>
         </div>
         <div class="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
           <ul
@@ -237,7 +236,7 @@ a {
 .example-title {
   text-align: center;
   margin-bottom: 60px;
-  padding: 3em 0;
+  padding: 2em 0 1em 0;
   border-bottom: 1px solid #e4eaec;
   p {
     margin: 0 auto;

@@ -1,9 +1,12 @@
 # Timeline-Gallery
 
-时间线demo，多图展示
+时间线demo，示例图展示如下
 
-![示例图01](https://www.qigemingzi.cn/picture/github/timeline01.png)
-![示例图02](https://www.qigemingzi.cn/picture/github/timeline02.png)
+![示例图01](https://www.qigemingzi.cn/picture/github/timelinedemo-01.png)
+![示例图02](https://www.qigemingzi.cn/picture/github/timelinedemo-02.png)
+![示例图03](https://www.qigemingzi.cn/picture/github/timelinedemo-03.png)
+
+> 示例图中的图片皆来源于[@pixaby](https://pixabay.com/)
 
 ## 参考网址
 https://codepen.io/brady_wright/pen/NNOvrW
