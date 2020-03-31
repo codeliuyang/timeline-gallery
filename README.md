@@ -1,6 +1,9 @@
 # Timeline-Gallery
 
+时间线demo，多图展示
 
+![示例图01](https://www.qigemingzi.cn/picture/github/timeline01.png)
+![示例图02](https://www.qigemingzi.cn/picture/github/timeline02.png)
 
 ## Project setup
 ```
