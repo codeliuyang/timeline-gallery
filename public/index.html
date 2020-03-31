@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+  <style>
+    .v--modal-box {
+      top: 10px;
+    }
+
+    .foot-home {
+      width: 100%;
+      padding: 1em 0;
+      text-align: center;
+    }
+
+    body {
+      background: #f1f4f5;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+  <div id="footer_homepage" class="foot-home js-foot-home">
+    <a href="http://beian.miit.gov.cn" target="_blank" style="color: #bdbdbd; font: 0.8em sans-serif;">沪ICP备xxxxx号/covid</a> 
+  </div>
+</body>
+
+</html>
