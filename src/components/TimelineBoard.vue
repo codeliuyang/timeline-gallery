@@ -39,7 +39,11 @@
                   {{ dayData.content }}
                 </p>
                 <ul class="image-wall">
-                  <li v-for="imgUrl in dayData.images" :key="imgUrl" @click="clickToWatch(imgUrl)">
+                  <li
+                    v-for="imgUrl in dayData.images"
+                    :key="imgUrl"
+                    @click="clickToWatch(imgUrl)"
+                  >
                     <img :src="imgUrl" />
                   </li>
                 </ul>
@@ -145,6 +149,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: 'TimelineBoard',
   props: {
@@ -154,103 +160,22 @@ export default {
     return {
       imgUrl: '',
       time: '123123',
-      allDatas: [
-        {
-          id: 1,
-          month: 'March',
-          year: '2020',
-          monthDatas: [
-            {
-              day: '1',
-              title: 'eventTitle',
-              content:
-                'Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.',
-              images: [
-                '/static/20160323/01.png',
-                '/static/20160323/02.jpg',
-                '/static/20160323/03.jpg',
-                '/static/20160323/04.jpg',
-                '/static/20160323/05.jpg',
-                '/static/20160323/06.png',
-                '/static/20160323/07.png'
-              ]
-            },
-            {
-              day: '2',
-              title: 'EventTitle',
-              content:
-                'Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.',
-              images: [
-                '/static/20160323/01.png',
-                '/static/20160323/02.jpg',
-                '/static/20160323/03.jpg',
-                '/static/20160323/04.jpg',
-                '/static/20160323/05.jpg',
-                '/static/20160323/06.png',
-                '/static/20160323/07.png'
-              ]
-            },
-            {
-              day: '3',
-              title: 'EventTitle',
-              content:
-                'Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.',
-              images: [
-                '/static/20160323/01.png',
-                '/static/20160323/02.jpg',
-                '/static/20160323/03.jpg',
-                '/static/20160323/04.jpg',
-                '/static/20160323/05.jpg',
-                '/static/20160323/06.png',
-                '/static/20160323/07.png'
-              ]
-            }
-          ]
-        },
-        {
-          id: 2,
-          month: 'April',
-          year: '2020',
-          monthDatas: [
-            {
-              day: '1',
-              title: 'eventTitle',
-              content:
-                'Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.',
-              images: [
-                '/static/20160323/01.png',
-                '/static/20160323/02.jpg',
-                '/static/20160323/03.jpg',
-                '/static/20160323/04.jpg',
-                '/static/20160323/05.jpg',
-                '/static/20160323/06.png',
-                '/static/20160323/07.png'
-              ]
-            },
-            {
-              day: '2',
-              title: 'EventTitle',
-              content:
-                'Nullam vel sem. Nullam vel sem. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Donec orci lectus, aliquam ut, faucibus non, euismod id, nulla. Donec vitae sapien ut libero venenatis faucibus. ullam dictum felis eu pede mollis pretium. Pellentesque ut neque.',
-              images: [
-                '/static/20160323/01.png',
-                '/static/20160323/02.jpg',
-                '/static/20160323/03.jpg',
-                '/static/20160323/04.jpg',
-                '/static/20160323/05.jpg',
-                '/static/20160323/06.png',
-                '/static/20160323/07.png'
-              ]
-            }
-          ]
-        }
-      ]
+      allDatas: []
     }
+  },
+  mounted() {
+    this.getData()
   },
   methods: {
     clickToWatch(imgUrl) {
       console.log('go')
       this.$modal.show('hello-image', { imgUrl: imgUrl })
+    },
+    getData() {
+      axios.get('/static/allData.json').then( response => {
+          console.log(response.data)
+          this.allDatas = response.data
+        });
     }
   }
 }
