@@ -5,6 +5,7 @@
 ![示例图01](https://www.qigemingzi.cn/picture/github/timelinedemo-01.png)
 ![示例图02](https://www.qigemingzi.cn/picture/github/timelinedemo-02.png)
 ![示例图03](https://www.qigemingzi.cn/picture/github/timelinedemo-03.png)
+![示例图04](https://github.com/codeliuyang/timeline-gallery/blob/master/public/static/20160323/01.png)
 
 > 示例图中的图片皆来源于[@pixaby](https://pixabay.com/)
 
